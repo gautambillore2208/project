@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+
+    
+    <body class="bg-slate-700 text-gray-900">
+
+        <div class="container mx-auto p-6 max-w-lg sm:max-w-xl md:max-w-2xl">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-white">Weather Forecast Application</h1>
+            
+  
+            <div class="mb-6">
+                <input type="text" id="city-input" class="p-4 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300" placeholder="Enter city name">
+                <button id="search-btn" class="mt-4 p-4 w-full bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300">Get Weather</button>
+            </div>
+    
+
+            <button id="current-location-btn" class="mt-4 p-4 w-full bg-zinc-500 text-white rounded-md hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-zinc-500 transition duration-300">Get Weather by Current Location</button>
+    
+
+            <div id="weather-data" class="bg-cyan-200 p-6 rounded-md shadow-lg mt-6">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">Current Weather</h2>
+                <p id="city-name" class="text-lg font-semibold text-gray-700 mb-2"></p>
+                <p id="weather-description" class="text-lg font-semibold text-gray-600 mb-2"></p>
+                <p id="temperature" class="text-4xl font-bold text-blue-600 mb-4"></p>
+                <p id="humidity" class="text-lg font-semibold text-gray-700 mb-2">Humidity: <span class="text-gray-600" id="humidity-value"></span></p>
+                <p id="wind-speed" class="text-lg font-semibold text-gray-700">Wind Speed: <span class="text-gray-600" id="wind-speed-value"></span></p>
+            </div>
+            
+
+            <div id="forecast-data" class="bg-teal-200 p-6 rounded-md shadow-lg mt-6">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">5-Day Forecast</h2>
+                <div id="forecast-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+         
+                </div>
+            </div>
+    
+       
+            <div class="mt-6">
+                <select id="recent-cities-dropdown" class="p-4 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition duration-300">
+                    <option value="">Select Recent City</option>
+                </select>
+            </div>
+        </div>
+    
+        <style>
+     
+            .forecast-card {
+                background-color: #f9fafb;
+                border-radius: 12px;
+                padding: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+    
+            .forecast-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+            }
+    
+          
+            select:focus {
+                border-color: #4CAF50;
+                box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.3);
+            }
+        </style>
+    </body>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

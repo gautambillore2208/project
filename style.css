@@ -1,0 +1,121 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Custom styles for the weather forecast application */
+
+/* General Body Styles */
+body {
+    @apply bg-gray-100 text-gray-900 font-sans;
+}
+
+/* Container for the application */
+.container {
+    @apply mx-auto p-4 max-w-lg;
+}
+
+/* Title Styles */
+h1 {
+    @apply text-3xl sm:text-4xl font-bold mb-6 text-center;
+}
+
+/* Input Field Styles */
+input[type="text"] {
+    @apply p-2 border border-gray-300 rounded w-full;
+}
+
+/* Button Styles */
+button {
+    @apply px-4 py-2 rounded text-white;
+}
+
+/* Specific styles for the search button */
+#search-btn {
+    @apply bg-blue-500 hover:bg-blue-600;
+}
+
+/* Styles for the current location button */
+#current-location-btn {
+    @apply bg-green-500 hover:bg-green-600 mt-2;
+}
+
+/* Weather Data Display */
+.weather-data {
+    @apply bg-white p-4 rounded shadow-md mt-4;
+}
+
+/* Extended Forecast Display */
+.forecast-data {
+    @apply bg-white p-4 rounded shadow-md mt-4;
+}
+
+/* Individual Weather Item */
+.weather-item {
+    @apply mb-4 border-b pb-2;
+}
+
+/* Recent Cities Dropdown */
+#recent-cities-dropdown {
+    @apply p-2 border border-gray-300 rounded w-full mt-2;
+}
+
+/* Responsive Styles */
+@media (max-width: md) {
+    .container {
+        @apply p-2;
+    }
+}
+
+/* Custom styles for the weather forecast application */
+
+/* Weather Icon Styles */
+.weather-icon {
+    @apply w-12 h-12 mr-2;
+}
+
+/* Weather Description Styles */
+.weather-description {
+    @apply text-lg font-bold;
+}
+
+/* Temperature Styles */
+.temperature {
+    @apply text-3xl font-bold;
+}
+
+/* Humidity Styles */
+.humidity {
+    @apply text-lg font-bold;
+}
+
+/* Wind Speed Styles */
+.wind-speed {
+    @apply text-lg font-bold;
+}
+
+/* Forecast Day Styles */
+.forecast-day {
+    @apply text-lg font-bold;
+}
+
+/* Forecast Date Styles */
+.forecast-date {
+    @apply text-lg font-bold;
+}
+
+/* Forecast Temperature Styles */
+.forecast-temperature {
+    @apply text-3xl font-bold;
+}
+
+/* Forecast Humidity Styles */
+.forecast-humidity {
+    @apply text-lg font-bold;
+}
+
+/* Forecast Wind Speed Styles */
+.forecast-wind-speed {
+    @apply text-lg font-bold;
+}
